@@ -10,7 +10,7 @@
 
 > This RSVP app is meant to be a very light weight way to enable full featured RSVP tracker.
 
-![GIF](https://rsvper.netlify.app/rsvpr.gif)
+![GIF](https://imgur.com/a/EpbdjeA)
 
 # 👨‍💻 Tech stack
 
