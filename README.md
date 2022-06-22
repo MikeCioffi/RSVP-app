@@ -6,16 +6,6 @@
 
 <br />
 
-<div align="center">
-
-**[THE WHY](https://github.com/MikeCioffi/RSVP-app#-the-why) • 
-[TECH STACK](https://github.com/MikeCioffi/RSVP-app#-tech-stack) • 
-**
-
-</div>
-
-<br />
-
 # 🧐 The Why
 
 > This RSVP app is meant to be a very light weight way to enable full featured RSVP tracker.
