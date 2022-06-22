@@ -1,0 +1,120 @@
+.submit-btn{
+
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 5px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 14px 18px;
+    color: #fff;
+    background-color: #beccc7;
+
+
+    
+}
+.disabled{
+    background-color:  rgba(114, 28, 36,1)!important
+    ;
+
+}
+.disabled:hover{
+    background-color:  rgb(155, 72, 81)!important
+    ;
+}
+
+.save-btn{
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 5px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 14px 18px;
+    color: #fff;
+    margin-right: 15px;
+    background-color: #beccc7;
+    
+
+}
+.submit-btn:hover , .save-btn:hover{
+    background-color: #D2E0DB; 
+}
+.btn-container{
+    display: flex; 
+    justify-content: center;
+    margin-left: 40px; 
+}
+
+.confirm-btn{
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 5px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 14px 18px;
+    color: #fff;
+    margin-right: 15px;
+    
+    
+}
+.yes{
+    background-color: #beccc7;
+
+}
+.no{
+    background-color:   rgb(155, 72, 81);
+
+}
+.item{
+    font-size: 14px;
+    line-height: 1;
+    display: inline-block;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 5px; 
+    color:white;
+    width: 40px; 
+
+}
+.item:hover{
+    cursor: pointer;
+
+    
+
+}
+.plus{
+    background-color: #beccc7;
+
+}
+
+.minus{
+    background-color:   rgb(155, 72, 81);
+
+
+}

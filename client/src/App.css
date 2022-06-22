@@ -1,0 +1,71 @@
+/* global variables */
+
+
+:root {
+    font-family: Helvetica, Arial, Sans-Serif;
+    /* scale for 1.2 */
+    --font-size-1: 1rem;
+    --font-size-2: 1.2rem;
+    --font-size-3: 1.44rem;
+    --font-size-4: 1.728rem;
+    /* h1 {
+  font-size: var(--font-size-6); var(--width-size-1)
+} */
+    --font-size-5: 2.074rem;
+    --font-size-6: 2.488rem;
+
+    --width-size-1: 40%; 
+
+
+    /* COLORS */
+
+    --color-green-1: #27ae60; 
+  
+
+
+    --color-red-light: #e08e85;
+    --color-red-regular: #e74c3c;
+
+  }
+
+:button{
+  --button-width-sm: 25%; 
+  --button-width-med: 50%; 
+  --button-width-large: 80%; 
+
+  }
+  
+  
+  @media screen and (max-width: 800px) {
+    :root {
+      /* scale for 1.33 */
+      --width-size-1: 100%; 
+      --font-size-1: 1rem;
+      --font-size-2: 1.333rem;
+      --font-size-3: 1.777rem;
+      --font-size-4: 2.369rem;
+      --font-size-5: 3.157rem;
+      --font-size-6: 4.209rem;
+    }
+  }
+
+.nav-container{
+  margin: 0 auto; 
+
+    width: var(--width-size-1); 
+    display:flex; 
+    justify-content:space-between;
+    margin-bottom: 15px;
+}
+.nav-sub-container{
+    width: var(--width-size-1); 
+    display:flex;
+    justify-content: center;
+    margin: 0 auto; 
+    margin-top: 15px;
+}
+.sub-container{
+    width: var(--width-size-1); 
+    margin: 0 auto; 
+    margin-top: 15px;
+}

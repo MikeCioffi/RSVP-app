@@ -1,0 +1,125 @@
+.search-input{
+
+    padding: 6px 12px;
+    height:36px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: 4px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-right: 5px; 
+
+}   
+.search-input:hover{
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem rgb(13 110 253 / 25%);
+}
+ .search-input:focus{
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+.update-search-list-initial-items{
+    display: flex; 
+    flex-direction: column;
+}
+
+.input-items{
+        width: var(--width-size-1); 
+        margin: 0 auto; 
+        text-align: center;
+
+
+}
+
+.initial-search-list{
+    margin-top:0;
+    list-style-type: none;
+    padding-left:0;
+    /* width: var(--width-size-1);  */
+    text-align: center;
+
+
+}
+.initial-search-list-item{
+    transition: all 0.2s linear 0s;
+    padding: 15px; 
+    background-color: #D2E0DB;
+    border-radius: 5px;
+    margin: 5px; 
+}
+.initial-search-list-item:hover{
+    background-color: #beccc7; 
+    cursor: pointer;
+
+}
+
+.updated-search-list{
+    width: var(--width-size-1); 
+    margin: 0 auto; 
+    padding-left:0;
+    text-align: center;
+}
+.updated-search-list-items{
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+}
+.updated-search-list-items-input{
+
+}
+.updated-search-list-item{
+    display:flex;
+    margin-bottom: 10px;
+ 
+
+}
+.updated-search-list-item > p{
+    min-width: 86px; 
+    text-align: center;
+}
+
+.alert {
+    margin-top: 12px; 
+    /* width: var(--width-size-1); */
+    padding: 12px 16px;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+  
+.alert-danger {
+    color:black!important;
+    background-color: var( --color-red-light);
+     border-color: rgba(220, 53, 69, 1);
+    color: rgba(114, 28, 36,1);
+  }
+ .alert-success {
+    background-color: rgba(227, 253, 235, 1);
+    border-color: rgba(38, 179, 3, 1);
+    color: rgba(60, 118, 61, 1);
+  }
+  .declines{
+      /* text-align: left !important; */
+      font-weight: 700;
+      width: 136px;
+  }
+  .success-icon {
+    border-color: rgba(38, 179, 3, 1);
+    color: rgba(60, 118, 61, 1);
+    height: 100%;
+  }

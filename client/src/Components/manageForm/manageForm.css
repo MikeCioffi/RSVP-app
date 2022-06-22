@@ -1,0 +1,29 @@
+.half{
+    width: 50%; 
+    display: flex; 
+    flex-direction: column;   
+}
+.create-form-container{
+    text-align: center;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.create-form{
+    width: var(--width-size-1); 
+    margin: 0 auto; 
+}
+.create-form-item{
+    text-align: right;
+    display:flex; 
+    margin: 5px; 
+    justify-content: center;
+}
+.create-form-item > p {
+ width: 30%; 
+ margin-right: 10px;
+}
+.create-form-item > input {
+    width: 30%; 
+   }
+
