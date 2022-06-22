@@ -10,7 +10,7 @@
 
 > This RSVP app is meant to be a very light weight way to enable full featured RSVP tracker.
 
-<img src="lb7rLg1.gif" width="40" height="40" />
+<img src="lb7rLg1.gif" width="400" height="400" />
 
 # 👨‍💻 Tech stack
 
