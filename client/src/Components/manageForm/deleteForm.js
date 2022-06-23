@@ -78,7 +78,7 @@ const DeleteForm =(props) => {
     setRsvps(rsvpList)
     props.setLoading(false)    
   }
-  },[props, rsvpList, skipContent]);
+  },[rsvpList]);
 
 
   // useEffect( () => {
