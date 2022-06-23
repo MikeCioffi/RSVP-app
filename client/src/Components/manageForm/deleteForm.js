@@ -55,10 +55,8 @@ const DeleteForm =(props) => {
 
     }
 
-    useEffect(() => {
-        {
-          populateList()
-      }},[]);
+    useEffect(() => {populateList()
+      },[]);
 
   useEffect(() => {
     const data = []
@@ -80,7 +78,7 @@ const DeleteForm =(props) => {
     setRsvps(rsvpList)
     props.setLoading(false)    
   }
-  },[rsvpList]);
+  },[props, rsvpList, skipContent]);
 
 
   // useEffect( () => {

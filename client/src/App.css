@@ -20,9 +20,17 @@
     /* COLORS */
 
     --color-green-1: #27ae60; 
+
+
+    --color-green-3: #749488;
+    --color-green-4: #90bbab; ; 
+
+    /* background color */
+    --color-green-5: #dcede7; ; 
+
   
 
-
+--color-red-5:  rgb(155, 72, 81);
     --color-red-light: #e08e85;
     --color-red-regular: #e74c3c;
 

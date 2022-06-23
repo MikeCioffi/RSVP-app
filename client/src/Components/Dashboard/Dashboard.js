@@ -46,17 +46,22 @@ const Dashboard = () => {
         setRunOnce(false)
     }
     return (totalRSVP ?  <div className='dash-container--column' >
-            <h1>Summary</h1> 
+            <h1>Totals</h1> 
             <div className='dash-container--row'>
 
-            <div className ='dash-column'>  {chicken} <GiChicken/></div>
-            <div className ='dash-column'>  {steak} <GiSteak/></div>
+            <div className ='dash-column'>  <p>Chicken</p> {chicken} <GiChicken/></div>
+            <div className ='dash-column'> <p>Steak</p> {steak} <GiSteak/></div>
 
-            <div className ='dash-column'>  {vegetarian} <GiCarrot/></div>
+            <div className ='dash-column'>  <p>Vegetarian</p>{vegetarian} <GiCarrot/></div>
 
             </div>
-            <div>Total: {totalRSVP} Guests</div>
-            <div>Not Attending: {decline}</div>
+            <div className ='dash-totals-container'>
+            <p className='dash-totals-title'>Attending:</p>
+            <p className='dash-totals-value'> {totalRSVP}</p>
+            <div className = 'break'/>
+            <p className='dash-totals-title declined-title'>Declined: </p>
+            <p className='dash-totals-value declined-value'> {decline}</p>
+            </div>
         </div> : 
         <div className='dash-container--column' >
             <LoadSpinner/>

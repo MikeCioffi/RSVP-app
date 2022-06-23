@@ -2,8 +2,7 @@ import React, { useState , useEffect} from 'react'
 import axios from 'axios';
 import { GiChicken, GiSteak, GiCarrot } from "react-icons/gi";
 
-import {BsEmojiFrown} from "react-icons/bs"
-import {RiEmotionSadLine,RiEmotionHappyLine} from "react-icons/ri"
+import {RiEmotionSadLine} from "react-icons/ri"
 
 // import "../Form/button.css"
 
@@ -47,7 +46,7 @@ const UpdateSearch = (props) => {
         } 
        }) 
         setUpdated(false)
-      }, [props.desiredID]);
+      }, [props.desiredID, props.rsvpTexts]);
     
       // set inital values for form
     useEffect(() => {
@@ -66,7 +65,7 @@ const UpdateSearch = (props) => {
     useEffect(() => {
         setDecline(initialItem.membersInvited - parseFloat(totalRSVP))
 
-    },[totalRSVP])
+    },[initialItem.membersInvited, totalRSVP])
 
 
 
@@ -132,18 +131,5 @@ const UpdateSearch = (props) => {
         </div>
         )
 } 
-// ---- OLD LOGIC BEFORE BUILT BUTTONS
-{/* <div className = 'updated-search-list-item'>               
-<p>Chicken:</p>
-<input className='search-input' type="number" id="Chicken" name="Chicken" min="0" max={initialItem.membersInvited} onChange = {e => setChicken(e.target.value)} defaultValue={initialItem.chicken} value={chicken} ></input>
-</div>
-<div className = 'updated-search-list-item'>                
-<p>Vegetarian:</p>
-<input className='search-input' type="number" id="Vegetarian" name="Vegetarian" min="0" max={initialItem.membersInvited} onChange = {e => setVegetarian(e.target.value)} defaultValue={initialItem.vegetarian} value={vegetarian}></input>
-</div>
-<div className = 'updated-search-list-item'>               
-<p>{decline > 0 && <RiEmotionSadLine/>}Decline:</p>
-<p className='declines' id="Declines" name="Declines" >{decline} </p>
-</div> */}
 
 export default UpdateSearch

@@ -11,29 +11,26 @@ console.log(axios.defaults.baseURL)
 
 const Form = () => {
     //initialize all the RSVP information
-    const [rsvpInformation, setRsvpInformation] = useState([{
-        rsvpCode: "",
-        familyName: "",
-        attending: false, 
-        memberInvited: 0, 
-        totalMembersInvited: 0, 
-        chicken: 0 , 
-        steak: 0, 
-        vegetarian: 0
-    }])
+    // const [rsvpInformation, setRsvpInformation] = useState([{
+    //     rsvpCode: "",
+    //     familyName: "",
+    //     attending: false, 
+    //     memberInvited: 0, 
+    //     totalMembersInvited: 0, 
+    //     chicken: 0 , 
+    //     steak: 0, 
+    //     vegetarian: 0
+    // }])
 
     const [desiredID, setDesiredID] = useState("")
     const [error, setEorror] = useState("")
-    const [rsvpText, setRsvpText] = useState()
     const [familyName, setFamilyName] = useState()
     const [rsvpTexts, setRsvpTexts] = useState([])
-    const [newData , setNewData ] = useState()
 
 
 
     const resetData = () => {
-        setNewData(false)
-        setRsvpText("")
+        // setNewData(false)
         setDesiredID("")
         setFamilyName("")
     }
@@ -52,12 +49,11 @@ const Form = () => {
             setEorror("")
             console.log('setting resetting ID')
             console.log(data.data.filteredData)
-            data.data.filteredData.map((item) => {
-                console.log(item)
+            data.data.filteredData.map((item) => 
                 rsvpTextsList.push(item)
-            })
+            )
             setRsvpTexts(rsvpTextsList)
-            setRsvpInformation(rsvpTextsList)
+            // setRsvpInformation(rsvpTextsList)
             resetData(); 
            
         }
@@ -82,18 +78,14 @@ const Form = () => {
     }
 
 
-    useEffect(() => {
-        if(newData === true){
-            fetchRsvps()
-        }
-    },[])
+
     useEffect(() => {
     }, [desiredID])
 
 return( <div>
             <div className = 'input-items'>
             <h3>Enter the last name of your family</h3>
-            <input className = 'search-input' type="text" onKeyDown={updateInput} onChange={(e)=> setFamilyName(e.target.value)} value={familyName} placeHolder="Need Help? Try Smith.."/>
+            <input className = 'search-input' type="text" onKeyDown={updateInput} onChange={(e)=> setFamilyName(e.target.value)} value={familyName} placeholder="Need Help? Try Smith.."/>
             <button className="submit-btn" onClick={()=>fetchRsvps()}> Find </button>
             {error.length >1 &&<div className ='alert alert-danger'>Name not found, please try again</div>}
             </div>
