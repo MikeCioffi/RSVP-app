@@ -23,7 +23,8 @@
     justify-content: center;
     flex-direction: column;
     font-size: var(--font-size-4); 
-    margin-top: 15px; 
+    margin-top: 15px;
+    margin-bottom: 15px;  
     background-color: var( --color-green-5)
 }
 
