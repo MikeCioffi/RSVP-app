@@ -4,6 +4,14 @@
     align-items: center;
     justify-content: center; 
 }
+.dash-column >p{
+    margin:5px; 
+}
+    @media(max-width: 815px) {
+        .dash-column >p{
+        display:none
+    }
+}
 
 .dash-container--column{
     margin: 0 auto; 
