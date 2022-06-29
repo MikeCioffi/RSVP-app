@@ -15,7 +15,7 @@ function App() {
   return (
     <div >
           <div className ='nav-container'>
-          <button className="submit-btn" onClick={()=>setActive('search')}> RSVP!</button>
+          <button className="submit-btn" onClick={()=>setActive('search')}> Home</button>
           <button className="submit-btn" onClick={()=>setActive('manage')}> Admin </button>
           <button className="submit-btn" onClick={()=>setActive('dashboard')}> Dashboard </button>
           </div>

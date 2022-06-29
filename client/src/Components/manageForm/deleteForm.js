@@ -44,6 +44,13 @@ const DeleteForm =(props) => {
     }
 
     const deleteID = async (id) => {
+      if(id == null )
+      {
+        fetchRsvps()
+        populateList()
+      }
+      else{
+
         await axios.delete(`api/rsvp/${id}`)
         .then(function(response){
           fetchRsvps()
@@ -52,7 +59,7 @@ const DeleteForm =(props) => {
           setErrorMessage('successful')
 
         })
-
+      }
     }
 
     useEffect(() => {populateList()

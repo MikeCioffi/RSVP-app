@@ -84,7 +84,7 @@ const Form = () => {
 
 return( <div>
             <div className = 'input-items'>
-            <h3>Enter the last name of your family</h3>
+            <h2>Enter the last name of your family</h2>
             <input className = 'search-input' type="text" onKeyDown={updateInput} onChange={(e)=> setFamilyName(e.target.value)} value={familyName} placeholder="Need Help? Try Smith.."/>
             <button className="submit-btn" onClick={()=>fetchRsvps()}> Find </button>
             {error.length >1 &&<div className ='alert alert-danger'>Name not found, please try again</div>}

@@ -76,7 +76,10 @@ const UpdateSearch = (props) => {
         <ul className='updated-search-list'>
         <div key={initialItem._id}>
             <div className='update-search-list-initial-items'>
+   
             <h3>{initialItem.familyName} Family of {initialItem.membersInvited} selected </h3>
+            <h5>Menu Selections: </h5>
+
               </div> 
             <div className= 'updated-search-list-items'> 
                 <div className = 'updated-search-list-item'>

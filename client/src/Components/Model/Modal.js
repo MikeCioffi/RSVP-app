@@ -11,6 +11,11 @@ const Modal = (props) => {
 
     }
 
+    const fakeReset = () => {
+        props.deleteFunction(null)
+
+    }
+
      console.log('modal loaded')
     return (
         <div>
@@ -18,7 +23,7 @@ const Modal = (props) => {
             <p>Are you sure you'd like to {props.title} this?</p>
    
             <button className ='confirm-btn yes'onClick={() =>deleteReset()}>yes</button>
-            <button className ='confirm-btn no'>no</button>
+            <button className ='confirm-btn no' onClick={() =>fakeReset()}>no</button>
              </div>
 
         
