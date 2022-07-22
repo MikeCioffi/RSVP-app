@@ -1,33 +1,32 @@
 .search-input{
+    width: var(--button-width-large); 
+	height: 3rem;
+	border: none;
+	border-radius: 15px;
+	outline: none;
+	font-size: var(--font-weight-1);
+	font-weight: bold;
+	padding: 0 1.5vmin;
+    -webkit-appearance: none;
 
-    padding: 6px 12px;
-    height:36px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    appearance: none;
-    border-radius: 4px;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    margin: 5px; 
+
+
+	box-shadow: var(--inner-shadow);
+	background: var(--primary-color-1);
+	color: var(--primary);
+	caret-color: var(--primary);
+    margin: 15px; 
+
 
 }   
 .search-input:hover{
     color: #212529;
-    background-color: #fff;
-    border-color: #86b7fe;
     outline: 0;
-    box-shadow: 0 0 0 0.1rem rgb(13 110 253 / 25%);
 }
  .search-input:focus{
     color: #212529;
-    background-color: #fff;
     border-color: #86b7fe;
     outline: 0;
-    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
 }
 
 .update-search-list-initial-items{
@@ -39,6 +38,8 @@
         width: var(--width-size-1); 
         margin: 0 auto; 
         text-align: center;
+        -webkit-appearance: none;
+
 
 
 }
@@ -47,22 +48,33 @@
     margin-top:0;
     list-style-type: none;
     padding-left:0;
-    /* width: var(--width-size-1);  */
+  width: 100%;
     text-align: center;
 
 
 }
 .initial-search-list-item{
     transition: all 0.2s linear 0s;
+    /* height: 5rem;  */
     padding: 15px; 
-    background-color: #D2E0DB;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--primary-color-1);
     border-radius: 5px;
-    margin: 5px; 
+    margin: 25px; 
+    border: 1px solid transparent; 
+
+    box-shadow:var( --inner-shadow);
 }
 .initial-search-list-item:hover{
-    background-color: #beccc7; 
-    cursor: pointer;
+  cursor: pointer;
+transform: scale(1.05);   opacity: .7; 
 
+
+}
+.selected-out{
+      box-shadow:var(--hover-shadow)
 }
 
 .updated-search-list{
@@ -99,7 +111,7 @@
     border-style: solid;
     border-width: 1px;
     margin-bottom: 12px;
-    font-size: 16px;
+    font-size: var(--font-size-2)
   }
   
 .alert-danger {

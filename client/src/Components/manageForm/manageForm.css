@@ -8,15 +8,21 @@
     margin-top: 15px;
     display: flex;
     flex-direction: column;
+    align-items: center; 
+    justify-content: center;
 }
 .create-form{
-    width: var(--width-size-1); 
-    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+   
 }
 .create-form-item{
     text-align: right;
     display:flex; 
-    margin: 5px; 
+    margin-right: 5px; 
     justify-content: center;
 }
 .create-form-item > p {
@@ -26,4 +32,3 @@
 .create-form-item > input {
     width: 30%; 
    }
-

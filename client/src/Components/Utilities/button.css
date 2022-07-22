@@ -1,11 +1,10 @@
 .submit-btn{
-
     display: inline-block;
     outline: none;
     cursor: pointer;
-    font-size: 14px;
+	font-size:var(--font-size-sm); 
     line-height: 1;
-    border-radius: 5px;
+	border-radius: 15px;
     transition-property: background-color,border-color,color,box-shadow,filter;
     transition-duration: .3s;
     border: 1px solid transparent;
@@ -15,14 +14,17 @@
     font-weight: 700;
     text-align: center;
     padding: 16px 14px 18px;
-    color: #fff;
-    background-color: #beccc7;
+    color: var(--black);
+    background-color:var(--primary-color-1);
+    box-shadow: var(--shadow)
+}
+.selected{
+    box-shadow: var(--inner-shadow)!IMPORTANT; 
 
-
-    
 }
 .disabled{
-    background-color:  rgba(114, 28, 36,1)!important
+    background-color:  rgba(114, 28, 36,1)!important; 
+    color: white !important; 
     ;
 
 }
@@ -37,7 +39,7 @@
     cursor: pointer;
     font-size: 14px;
     line-height: 1;
-    border-radius: 5px;
+	border-radius: 15px;
     transition-property: background-color,border-color,color,box-shadow,filter;
     transition-duration: .3s;
     border: 1px solid transparent;
@@ -47,14 +49,24 @@
     font-weight: 700;
     text-align: center;
     padding: 16px 14px 18px;
-    color: #fff;
-    margin-right: 15px;
-    background-color: #beccc7;
+    color: var(--black);
+    margin : 15px;
+    background-color: var(--primary-color-1);
+    box-shadow: var(--shadow); 
     
 
 }
 .submit-btn:hover , .save-btn:hover{
-    background-color: #D2E0DB; 
+    transition: all .2s ease-out;
+    transform: scale(1.05); 
+    box-shadow:var(--hover-shadow)
+ 
+      
+}
+
+.submit-btn:focus, .save-btn:focus{
+    box-shadow:var(--inner-shadow-2)
+
 }
 .btn-container{
     display: flex; 
@@ -68,7 +80,7 @@
     cursor: pointer;
     font-size: 14px;
     line-height: 1;
-    border-radius: 5px;
+	border-radius: 15px;
     transition-property: background-color,border-color,color,box-shadow,filter;
     transition-duration: .3s;
     border: 1px solid transparent;
@@ -81,10 +93,17 @@
     color: #fff;
     margin-right: 15px;
     
-    
+    box-shadow:var(--hover-shadow)
+
+}
+.confirm-btn:hover{
+    transform: scale(1.05);  
+     opacity: .7; 
+
 }
 .yes{
-    background-color: #beccc7;
+    background-color: #84a59d !important;
+    color:white; 
 
 }
 .no{
@@ -97,19 +116,21 @@
     display: inline-block;
     outline: none;
     border: 1px solid transparent;
-    border-radius: 5px; 
+	border-radius: 15px;
     color:white;
     width: 40px; 
+    box-shadow:var(--shadow)
 
 }
 .item:hover{
     cursor: pointer;
 
-    
+    transform: scale(1.05);  
+
 
 }
 .plus{
-    background-color: #beccc7;
+    background-color: #84a59d;
 
 }
 

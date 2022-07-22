@@ -1,0 +1,3 @@
+"browserslist": [
+    "since 2010" // support all browsers & versions released since 2010
+]

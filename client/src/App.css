@@ -1,16 +1,14 @@
 /* global variables */
 
-
 :root {
-    font-family: Helvetica, Arial, Sans-Serif;
-    /* scale for 1.2 */
+    font-family: Lato;
+    --font-size-sm: .8rem;
+
     --font-size-1: 1rem;
     --font-size-2: 1.2rem;
     --font-size-3: 1.44rem;
     --font-size-4: 1.728rem;
-    /* h1 {
-  font-size: var(--font-size-6); var(--width-size-1)
-} */
+
     --font-size-5: 2.074rem;
     --font-size-6: 2.488rem;
 
@@ -19,20 +17,41 @@
 
     /* COLORS */
 
+    --primary-color-1: #e8e8e4; 
     --color-green-1: #27ae60; 
 
-
-    --color-green-3: #749488;
+      --black: #353535; 
+    --color-green-3: #84a59d;
     --color-green-4: #90bbab; ; 
 
     /* background color */
     --color-green-5: #dcede7; ; 
-
-  
-
---color-red-5:  rgb(155, 72, 81);
+    --color-green-6: #beccc7; 
+    --greyLight-1: #000000;
+    --greyLight-2: #000000;
+    --color-red-5:  rgb(155, 72, 81);
     --color-red-light: #e08e85;
     --color-red-regular: #e74c3c;
+      background-color:var(--primary-color-1);
+      --shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2),
+      -0.2rem -0.2rem 0.5rem var(--white);
+      --inner-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2),
+      inset -0.2rem -0.2rem 0.5rem var(--white);
+      --hover-shadow: 4px 4px 15px 0 rgba(0,0,0,.1), -4px -4px 15px rgba(255,255,255,1); 
+      --inner-shadow-2: -10px -10px 10px rgba(255, 255, 255, 0.2),
+      15px 15px 15px rgba(0, 0, 0, 0.1),
+      -10px -10px 10px rgba(255, 255, 255, 0.2) inset,
+      15px 15px 15px rgba(0, 0, 0, 0.1) inset;
+
+
+      --white: #ffffff;
+      --greyLight-1: #e4ebf5;
+      --greyLight-2: #c8d0e7;
+      --shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2),
+        -0.2rem -0.2rem 0.5rem var(--white);
+      --inner-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2),
+        inset -0.2rem -0.2rem 0.5rem var(--white);
+    
 
   }
 
@@ -58,12 +77,14 @@
   }
 
   .nav-container{
-    margin: 0 auto; 
-  
-      width: var(--width-size-1); 
+      padding: 15px; 
+      box-shadow: 10px 10px 12px 0 rgba(0,0,0,.07);
       display:flex; 
-      justify-content:space-between;
+      justify-content:center;
       margin-bottom: 15px;
+  }
+  .nav-container>button{
+    margin: 15px; 
   }
   .nav-sub-container{
       width: var(--width-size-1); 
@@ -71,7 +92,6 @@
       justify-content: center;
       margin: 0 auto; 
       margin-top: 15px;
-      transform: translate(-15px, 0);
   }
   .sub-container{
       width: var(--width-size-1); 
